@@ -1,0 +1,243 @@
+<div class="wrapper apple">
+   {{#with header}}
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+            <div class="header__block">
+               <a class="logo" href="https://www.apple.com/">
+                  <img class="logo__img" src="/svg/apple/logo.svg"
+                     alt="apple logo" />
+               </a>
+               <nav class="header__nav">
+                  <ul class="header__nav-list">
+                     {{#each links}}
+                     <li class="header__nav-item">
+                        <a class="header__nav-link" href="{{url}}">{{text}}</a>
+                     </li>
+                     {{/each}}
+                  </ul>
+               </nav>
+            </div>
+            <div class="header__block">
+               <img class="header__icon" src="/svg/apple/search.svg"
+                  alt="Search">
+               <img class="header__icon" src="/svg/apple/profile.svg"
+                  alt="Profile">
+            </div>
+         </div>
+      </div>
+   </header>
+   {{#with ad}}
+   <div class="ribbon">
+      <div class="container">
+         <div class="ribbon__inner">
+            <p class="ribbon__text">{{title}}</p>
+            <a class="ribbon__link hvr-wobble-skew" href="{{link.url}}">{{link.text}}</a>
+         </div>
+      </div>
+   </div>
+   {{/with}}
+   {{/with}}
+   <main class="main">
+      <section class="iphone-14-pro">
+         <div id="videoContainer">
+            <div class="video-wrapper">
+               <video id="myVideo"
+                  src="https://www.apple.com/105/media/us/iphone-14-pro/2023/b094f6e4-dcdb-494f-bd72-45d659126dcd/anim/hero/large.mp4"
+                  autoplay muted></video>
+            </div>
+         </div>
+         <div id="imageContainer" class="iphone-14-pro__inner">
+            <div class="container">
+               {{#with iphone_pro}}
+               <div class="iphone-14-pro__content">
+                  <h1 class="iphone-14-pro__title">{{title}}</h1>
+                  <p class="iphone-14-pro__description">{{descriptions}}</p>
+                  {{#with link}}
+                  <div class="iphone-14-pro__links">
+                     {{#each text}}
+                     <a class="iphone-14-pro__link hvr-wobble-skew"
+                        href="{{../link}}">{{this}}</a>
+                     {{/each}}
+                  </div>
+                  {{/with}}
+               </div>
+               {{/with}}
+            </div>
+         </div>
+      </section>
+      <section class="iphone-14">
+         <div class="container">
+            {{#with iphone}}
+            <div class="iphone-14__content">
+               <h1 class="iphone-14__title">{{title}}</h1>
+               <p class="iphone-14__description">{{descriptions}}</p>
+               {{#with link}}
+               <div class="iphone-14__links">
+                  {{#each text}}
+                  <a class="iphone-14__link hvr-wobble-skew" href="{{../link}}">{{this}}</a>
+                  {{/each}}
+               </div>
+               {{/with}}
+            </div>
+            {{/with}}
+         </div>
+      </section>
+      <section class="apple-watch">
+         <div class="container">
+            {{#with iwatch}}
+            <div class="apple-watch__content">
+               <h1 class="apple-watch__title">{{title}}</h1>
+               <p class="apple-watch__description">{{descriptions}}</p>
+               {{#with link}}
+               <div class="apple-watch__links">
+                  {{#each text}}
+                  <a class="apple-watch__link hvr-wobble-skew"
+                     href="{{../link}}">{{this}}</a>
+                  {{/each}}
+               </div>
+               {{/with}}
+            </div>
+            {{/with}}
+         </div>
+      </section>
+      <section class="double-block">
+         <div class="trade img-trade">
+            {{#with trade_in}}
+            <div class="content">
+               <h1 class="title">{{title}}</h1>
+               <p class="description">{{descriptions}}</p>
+               <a class="link hvr-wobble-skew" href="{{link.link}}">{{link.text}}</a>
+            </div>
+            {{/with}}
+         </div>
+         <div class="conference img-conference">
+            {{#with conference}}
+            <div class="content">
+               <h1 class="title">{{title}}</h1>
+               <p class="description">{{descriptions}}</p>
+               <a class="link hvr-wobble-skew" href="{{link.link}}">{{link.text}}</a>
+            </div>
+            {{/with}}
+         </div>
+      </section>
+      <section class="double-block">
+         <div class="ipad img-ipad">
+            {{#with ipad}}
+            <div class="content">
+               <h1 class="title">{{title}}</h1>
+               <p class="description">{{descriptions}}</p>
+               {{#with link}}
+               <div class="ipad__links">
+                  {{#each text}}
+                  <a class="link hvr-wobble-skew" href="{{link}}">{{this}}</a>
+                  {{/each}}
+               </div>
+               {{/with}}
+            </div>
+            {{/with}}
+         </div>
+         <div class="business img-business">
+            {{#with small_business}}
+            <div class="content">
+               <h1 class="title">{{title}}</h1>
+               <p class="description">{{descriptions}}</p>
+               <a class="link hvr-wobble-skew" href="{{link.link}}">{{link.text}}</a>
+            </div>
+            {{/with}}
+         </div>
+      </section>
+      <section class="double-block">
+         <div class="gift img-gift">
+            {{#with gift}}
+            <div class="content">
+               <h1 class="title">{{title}}</h1>
+               <p class="description">{{descriptions}}</p>
+               <a class="link hvr-wobble-skew" href="{{link.link}}">{{link.text}}</a>
+            </div>
+            {{/with}}
+         </div>
+         <div class="card img-card">
+            {{#with card}}
+            <div class="content">
+               <h1 class="title">{{title}}</h1>
+               <p class="description">{{descriptions}}</p>
+               <a class="link hvr-wobble-skew" href="{{link.link}}">{{link.text}}</a>
+            </div>
+            {{/with}}
+         </div>
+      </section>
+      <section class="slider">
+         <div class="swiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <img
+                     src="https://is2-ssl.mzstatic.com/image/thumb/z9B-5Ow-sggMXLJGroT1Lg/1250x703.jpg"
+                     alt>
+               </div>
+               <div class="swiper-slide">
+                  <img
+                     src="https://is3-ssl.mzstatic.com/image/thumb/JJo1Kp84yVQ1emwipSnq2A/1250x703.jpg"
+                     alt>
+               </div>
+               <div class="swiper-slide">
+                  <img
+                     src="https://is3-ssl.mzstatic.com/image/thumb/CvNCk6LFQGbwX_XWcd7gag/1250x703.jpg"
+                     alt>
+               </div>
+               <div class="swiper-slide">
+                  <img
+                     src="https://is3-ssl.mzstatic.com/image/thumb/Ze8uZ-TWJ2JMbqmtcz8_BA/1250x703.jpg"
+                     alt>
+               </div>
+               <div class="swiper-slide">
+                  <img
+                     src="https://is1-ssl.mzstatic.com/image/thumb/QZB0J5JE-kQfPl48Z4SIfw/1250x703.jpg"
+                     alt>
+               </div>
+               <div class="swiper-slide">
+                  <img
+                     src="https://is2-ssl.mzstatic.com/image/thumb/JdmLVQN99mIa15_uECg4uw/980x551.jpg"
+                     alt>
+               </div>
+               <div class="swiper-slide">
+                  <img
+                     src="https://is1-ssl.mzstatic.com/image/thumb/qL-yBoKCFztx-kDyvIXlHw/980x551.jpg"
+                     alt>
+               </div>
+               <div class="swiper-slide">
+                  <img
+                     src="https://is2-ssl.mzstatic.com/image/thumb/divxDY27bQOH7PPRX2wfJQ/980x551.jpg"
+                     alt>
+               </div>
+               <div class="swiper-slide">
+                  <img
+                     src="https://is3-ssl.mzstatic.com/image/thumb/ageP1PYyLi7UlNiWMva32Q/980x551.jpg"
+                     alt>
+               </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+            {{#each footer}}
+            <div class="footer__block">
+               <strong class="footer__title">{{title}}</strong>
+               <ul class="footer__list">
+                  {{#each links}}
+                  <li class="footer__item">
+                     <a class="footer__link" href="{{url}}">{{text}}</a>
+                  </li>
+                  {{/each}}
+               </ul>
+               <span class="footer__toggle">+</span>
+            </div>
+            {{/each}}
+         </div>
+      </div>
+   </footer>
+</div>

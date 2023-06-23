@@ -1,0 +1,37 @@
+@use './space.scss';
+
+@mixin linkArrowDark {
+   &::after {
+      content: '';
+      background-image: url('/svg/apple/dark-arrow.svg');
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 11px;
+      display: inline-block;
+      margin-left: space.space(2);
+   }
+}
+
+@mixin linkArrowSmall {
+   &::after {
+      content: '';
+      background-image: url('/svg/apple/small-arrow.svg');
+      background-repeat: no-repeat;
+      width: 5px;
+      height: 9px;
+      display: inline-block;
+      margin-left: space.space(2);
+   }
+}
+
+@mixin linkArrowLight {
+   &::after {
+      content: '';
+      background-image: url('/svg/apple/light-arrow.svg');
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 11px;
+      display: inline-block;
+      margin-left: space.space(2);
+   }
+}

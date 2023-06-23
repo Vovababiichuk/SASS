@@ -1,0 +1,46 @@
+// $color_background: f5f5f7;
+// $colorBackground: f5f5f7;
+
+// Створюємо змінну colorMap в якій в нас буде обьект значення (Key: Value) (background: f5f5f7)
+$colorMap: (
+   background: #f5f5f7,
+   backgroundHeader: #454545,
+   colorTextHeader: #dadada,
+   colorLinkLight: #0066CC,
+   colorLinkDark: #2997FF,
+   colorTextLightBg: #1d1d1f,
+   colorTitleWhite: #f5f5f7,
+);
+
+// І зробимо ф-ю color яка приймає $key і повертає нам результат map-get...
+// Ми створили ф-ю color яка витаскує нам колір...
+@function color($key) {
+   @return map-get($colorMap, $key);
+}
+
+$sizeMap: (
+   default: 16px,
+   small: 12px,
+   medium: 14px,
+   xmedium: 20px,
+   large: 28px,
+   xlarge: 40px,
+   xxlarge: 56px,
+);
+
+@function size($key: 'default') {
+   @return map-get($sizeMap, $key);
+}
+
+// $screenMapAdaptive: (
+//    xxl: 1400px,
+//    xl: 1200px,
+//    lg: 992px,
+//    md: 768px,
+//    sm: 576px,
+// );
+
+// @function screenAdaptive($key: 'xxl') {
+//    @return map-get($screenMapAdaptive, $key);
+// }
+

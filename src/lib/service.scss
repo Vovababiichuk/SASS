@@ -1,0 +1,16 @@
+// Підключаємо функцію space
+@use './space.scss';
+// Передаємо функцію space в інші файли які будуть підключати service
+@forward './space.scss';
+
+@use './var.scss';
+@forward './var.scss';
+
+@use './click.scss';
+@forward './click.scss';
+
+@use './linkAction.scss';
+@forward './linkAction.scss';
+
+@use './img.scss';
+@forward './img.scss';
