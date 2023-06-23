@@ -1,0 +1,675 @@
+.img-trade {
+  background-image: url("/img/apple/trade.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 580px;
+}
+
+.img-conference {
+  background-image: url("/img/apple/conference.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 580px;
+}
+
+.img-ipad {
+  background-image: url("/img/apple/ipad.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 580px;
+}
+
+.img-business {
+  background-image: url("/img/apple/business.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 580px;
+}
+
+.img-gift {
+  background-image: url("/img/apple/gift.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 580px;
+}
+
+.img-card {
+  background-image: url("/img/apple/card.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 580px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 2600px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.apple {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #f5f5f7;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #454545;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.header__block,
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__icon,
+.logo__img {
+  transition-property: opacity, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.header__icon:hover,
+.logo__img:hover {
+  color: #e16bee;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.header__icon:active,
+.logo__img:active {
+  opacity: 0.2;
+}
+
+.header__nav-link {
+  transition-property: opacity, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  font-size: 12px;
+  line-height: 1;
+  color: #dadada;
+}
+.header__nav-link:hover {
+  color: #2997FF;
+  opacity: 1;
+}
+.header__nav-link:active {
+  opacity: 0.2;
+}
+
+.ribbon {
+  background-color: #f5f5f7;
+}
+
+.ribbon__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.ribbon__text {
+  font-size: 14px;
+  line-height: 1.47;
+  color: #1d1d1f;
+}
+
+.ribbon__link {
+  font-size: 14px;
+  line-height: 1.47;
+  color: #0066CC;
+  transition-property: opacity, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.ribbon__link:hover {
+  color: #e16bee;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.ribbon__link:active {
+  opacity: 0.2;
+}
+.ribbon__link::after {
+  content: "";
+  background-image: url("/svg/apple/small-arrow.svg");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 9px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.iphone-14-pro {
+  background-color: #000;
+  max-height: 700px;
+  height: 100vh;
+}
+
+.iphone-14-pro__inner,
+.iphone-14,
+.apple-watch {
+  background-color: #000;
+  background-image: url("/img/apple/iphone-14-pro.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 700px;
+  height: 100vh;
+  display: none;
+}
+
+#videoContainer {
+  display: block;
+}
+
+#imageContainer {
+  display: none;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 700px;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.iphone-14-pro__content,
+.iphone-14__content,
+.apple-watch__content {
+  padding: 80px 0;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+
+.iphone-14-pro__title,
+.iphone-14__title,
+.apple-watch__title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1;
+  color: #f5f5f7;
+}
+
+.iphone-14-pro__description,
+.iphone-14__description,
+.apple-watch__description {
+  font-size: 28px;
+  line-height: 1;
+  color: #f5f5f7;
+}
+
+.iphone-14-pro__link,
+.iphone-14__link,
+.apple-watch__link {
+  font-size: 20px;
+  line-height: 1;
+  color: #2997FF;
+  transition-property: opacity, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.iphone-14-pro__link:hover,
+.iphone-14__link:hover,
+.apple-watch__link:hover {
+  color: #e16bee;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.iphone-14-pro__link:active,
+.iphone-14__link:active,
+.apple-watch__link:active {
+  opacity: 0.2;
+}
+.iphone-14-pro__link::after,
+.iphone-14__link::after,
+.apple-watch__link::after {
+  content: "";
+  background-image: url("/svg/apple/dark-arrow.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 11px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.iphone-14-pro__link:not(:last-child),
+.iphone-14__link:not(:last-child),
+.apple-watch__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.iphone-14,
+.apple-watch {
+  display: block;
+  background-color: #f5f5f7;
+  background-image: url("/img/apple/iphone-14.jpg");
+}
+
+.iphone-14__title,
+.iphone-14__description {
+  color: #1d1d1f;
+}
+
+.iphone-14__link {
+  color: #0066CC;
+}
+.iphone-14__link::after {
+  content: "";
+  background-image: url("/svg/apple/light-arrow.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 11px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.apple-watch {
+  background-color: #000;
+  background-image: url("/img/apple/apple-watch.jpg");
+}
+
+.double-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.double-block .content {
+  padding: 52px 0;
+  text-align: center;
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+.double-block .title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  color: #1d1d1f;
+}
+
+.double-block .description {
+  font-size: 20px;
+  line-height: 1;
+  color: #1d1d1f;
+}
+
+.double-block .link {
+  font-size: 20px;
+  line-height: 1;
+  color: #2997FF;
+  transition-property: opacity, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.double-block .link:hover {
+  color: #e16bee;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.double-block .link:active {
+  opacity: 0.2;
+}
+.double-block .link::after {
+  content: "";
+  background-image: url("/svg/apple/light-arrow.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 11px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.conference {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.conference .title,
+.business .title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  color: #f5f5f7;
+  width: 100%;
+  max-width: 276px;
+}
+
+.business .title,
+.gift .title,
+.gift .description,
+.card .description {
+  line-height: 1.3;
+}
+
+.conference .description,
+.business .description {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #f5f5f7;
+  width: 100%;
+  max-width: 370px;
+}
+
+.conference .link,
+.business .link {
+  transition-property: opacity, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.conference .link:hover,
+.business .link:hover {
+  color: #e16bee;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.conference .link:active,
+.business .link:active {
+  opacity: 0.2;
+}
+.conference .link::after,
+.business .link::after {
+  content: "";
+  background-image: url("/svg/apple/dark-arrow.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 11px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.ipad .link {
+  margin-right: 20px;
+}
+
+.gift .title {
+  width: 100%;
+  max-width: 340px;
+}
+
+.gift .description {
+  width: 100%;
+  max-width: 210px;
+}
+
+.card .description {
+  width: 100%;
+  max-width: 262px;
+}
+
+.swiper {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 590px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.swiper-slide {
+  display: flex;
+  filter: brightness(0.2);
+  opacity: 0.3;
+}
+
+.swiper-slide.swiper-slide-active {
+  filter: brightness(1);
+  opacity: 1;
+}
+
+.footer {
+  padding: 52px 0;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.footer__item {
+  margin-bottom: 12px;
+}
+
+.footer__link {
+  font-size: 12px;
+  line-height: 1;
+  color: #454545;
+  transition-property: opacity, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.footer__link:hover {
+  color: #2997FF;
+  opacity: 1;
+}
+.footer__link:active {
+  opacity: 0.2;
+}
+
+@-webkit-keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+@keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+.hvr-wobble-skew {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-wobble-skew:hover,
+.hvr-wobble-skew:focus,
+.hvr-wobble-skew:active {
+  -webkit-animation-name: hvr-wobble-skew;
+  animation-name: hvr-wobble-skew;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@media all and (width <= 768px) {
+  .ribbon__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ribbon__text {
+    margin-bottom: 6px;
+  }
+  .double-block {
+    grid-template-columns: 1fr;
+  }
+  .footer__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .swiper {
+    height: 450px;
+  }
+}
+.footer__toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.footer__list.collapsed {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .footer__block .footer__toggle {
+    display: block;
+  }
+  .footer__block .footer__list {
+    display: none;
+  }
+  .footer__block.collapsed .footer__list {
+    display: block;
+  }
+  .footer__block.expanded .footer__list {
+    display: block;
+  }
+  .footer__block.expanded .footer__toggle {
+    display: none;
+  }
+}
+@media all and (width <= 576px) {
+  .header__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header__block:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .header__nav-list {
+    gap: 24px;
+  }
+  .footer__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .swiper {
+    height: 350px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

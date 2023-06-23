@@ -1,0 +1,19 @@
+$productImg: (
+   'trade': url('/img/apple/trade.jpg'),
+   'conference': url('/img/apple/conference.jpg'),
+   'ipad': url('/img/apple/ipad.jpg'),
+   'business': url('/img/apple/business.jpg'),
+   'gift': url('/img/apple/gift.jpg'),
+   'card': url('/img/apple/card.jpg'),
+);
+
+@each $key, $value in $productImg {
+   .img-#{$key} {
+      background-image: $value;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      min-height: 580px;
+   }
+}

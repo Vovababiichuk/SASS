@@ -1,0 +1,32 @@
+@use './var.scss';
+
+@mixin click {
+   transition-property: opacity, color;
+   transition-duration: 0.3s;
+   transition-timing-function: ease-in-out;
+
+   &:hover {
+      color: #e16bee;
+      opacity: 0.8;
+      cursor: pointer;
+   }
+
+   &:active {
+      opacity: 0.2;
+   }
+}
+
+@mixin hover {
+   transition-property: opacity, color;
+   transition-duration: 0.3s;
+   transition-timing-function: ease-in-out;
+
+   &:hover {
+      color: var.color('colorLinkDark');
+      opacity: 1;
+   }
+
+   &:active {
+      opacity: 0.2;
+   }
+}

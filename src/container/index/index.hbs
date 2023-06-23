@@ -1,13 +1,31 @@
-{{! 
-Це код container файлу для index сторінки, 
+{{!
+Це код container файлу для index сторінки,
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
- }}
-
-<div >
-  Hello world!
-</div>
-
-{{! 
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
 }}
+
+<section class="index-page">
+  <div class="container">
+    <span class="name">Volodymyr Babiichuk</span>
+    <div class="index-page__inner">
+      <div class="apple">
+        <span class="finger">
+          <img class="finger__img" src="/img/finger.png" alt>
+        </span>
+        <a class="apple-link" href="/apple" target="_blank"><i
+            class="fa fa-apple" id="apple"></i></a>
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-sass" id="sass"></i>
+        <p id="practice">Practice</p>
+        {{!-- <i class="fa fa-twitter" id="twitter"></i> --}}
+        {{!-- <i class="fa fa-github-square github" id="github"></i>
+        <i class="fa fa-facebook-square" id="facebook"></i> --}}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{!
+Цей код містить лише те, що буде виводитись в <body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}

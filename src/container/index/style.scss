@@ -1,0 +1,200 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   height: 100vh;
+   width: 100vw;
+   background: #18191f;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+}
+
+#apple,
+#sass,
+#github,
+#practice {
+   font-size: 8em;
+   background-color: #18191f;
+   color: #fff;
+   box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+      2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+      inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+      inset 2px 2px 10px #00000080;
+   border-radius: 29px;
+   padding: 11px 19px;
+   margin: 0 40px;
+   animation: animate 3s linear infinite;
+   text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+      0 0 200px #0072ff;
+}
+
+#sass {
+   animation-delay: 0.3s;
+}
+
+#practice {
+   animation-delay: 0.7s;
+}
+
+#github {
+   animation-delay: 0.1s;
+}
+
+@keyframes animate {
+   from {
+      filter: hue-rotate(0deg);
+   }
+
+   to {
+      filter: hue-rotate(360deg);
+   }
+}
+
+.container {
+   width: 100%;
+   max-width: 1030px;
+   margin: 0 auto;
+   padding: 0 15px;
+   position: relative;
+}
+
+.index-page__inner {
+   display: flex;
+   align-items: center;
+   gap: 60px;
+}
+
+.apple {
+   position: relative;
+}
+
+.apple {
+   display: flex;
+}
+
+.finger__img {
+   width: 200px;
+   height: 200px;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.social {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   align-items: center;
+}
+
+#apple {
+   transition: scale 0.3s ease-in-out;
+}
+
+#apple:hover {
+   scale: 1.2;
+   box-shadow: 0 0 25px #0072ff;
+}
+
+.name {
+   position: absolute;
+   font-size: 60px;
+   rotate: -15deg;
+   font-family: 'Dancing Script', cursive;
+   position: absolute;
+   top: 70;
+   left: 0;
+   height: 200px;
+   width: 100%;
+   max-width: 600px;
+   padding: 20px;
+}
+
+@keyframes pulse {
+   0% {
+      transform: translateX(-5px);
+   }
+
+   50% {
+      transform: translateX(5px);
+   }
+
+   100% {
+      transform: translateX(-5px);
+   }
+}
+
+.apple-link {
+   display: inline-block;
+}
+
+.finger {
+   animation: pulse 1s infinite;
+}
+
+.name {
+   background: linear-gradient(45deg, #ff00ff, #00ff00, #0000ff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+@keyframes wave-animation {
+   0% {
+      transform: perspective(400px) rotateX(0deg);
+   }
+
+   50% {
+      transform: perspective(400px) rotateX(20deg);
+   }
+
+   100% {
+      transform: perspective(400px) rotateX(0deg);
+   }
+}
+
+.name {
+   display: inline-block;
+   animation: wave-animation 2s ease-in-out infinite;
+}
+
+@media all and (width <=1000px) {
+   .index-page__inner {
+      gap: 0;
+      font-size: 10px;
+   }
+
+   .finger__img {
+      width: 150px;
+      height: 150px;
+   }
+}
+
+@media all and (width <=768px)  {
+   .index-page__inner {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media all and (width <=576px)  {
+   .name {
+      top: 35px;
+      left: 29px;
+   }
+}
+
+@media all and (width <=498px)  {
+   .name {
+      top: 2px;
+      left: 29px;
+   }
+}
+
